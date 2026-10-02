@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3e2f7"/>
+      <stop offset="1" stop-color="#eef8fe"/>
+    </linearGradient>
+    <g id="pup" stroke-linejoin="round" stroke-linecap="round">
+      <g fill="#ffffff" fill-opacity="0.95" stroke="#a9cdec" stroke-width="2.5">
+        <ellipse cx="75" cy="100" rx="55" ry="18"/><ellipse cx="42" cy="92" rx="24" ry="12"/><ellipse cx="108" cy="92" rx="26" ry="12"/>
+      </g>
+      <ellipse cx="30" cy="50" rx="27" ry="12" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5" transform="rotate(18 30 50)"/>
+      <ellipse cx="120" cy="50" rx="27" ry="12" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5" transform="rotate(-18 120 50)"/>
+      <circle cx="75" cy="48" r="30" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5"/>
+      <ellipse cx="63" cy="46" rx="3" ry="4.8" fill="#5d84b8"/><ellipse cx="87" cy="46" rx="3" ry="4.8" fill="#5d84b8"/>
+      <path d="M70 56 q2.5 3.5 5 0 q2.5 3.5 5 0" stroke="#6b7b8c" stroke-width="2" fill="none"/>
+      <ellipse cx="50" cy="55" rx="6.5" ry="4.5" fill="#f9ccd6"/><ellipse cx="100" cy="55" rx="6.5" ry="4.5" fill="#f9ccd6"/>
+      <path d="M57 74 q18 10 36 0" stroke="#8fc3ee" stroke-width="5" fill="none"/>
+    </g>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <g fill="#ffffff" fill-opacity="0.6">
+    <g><circle cx="140" cy="120" r="22"/><circle cx="175" cy="110" r="28"/><circle cx="210" cy="122" r="18"/><ellipse cx="175" cy="127" rx="52" ry="12"/></g>
+    <g><circle cx="560" cy="90" r="18"/><circle cx="590" cy="83" r="23"/><ellipse cx="578" cy="94" rx="42" ry="10"/></g>
+  </g>
+  <path d="M330 150 l2.6 5.6 6 .8 -4.4 4.2 1.1 6 -5.3 -2.9 -5.3 2.9 1.1 -6 -4.4 -4.2 6 -.8 z" fill="#f6e27a" stroke="#e3c94e" stroke-width="1.5"/>
+  <path d="M660 180 l2 4.4 4.8 .6 -3.5 3.4 .9 4.8 -4.2 -2.3 -4.2 2.3 .9 -4.8 -3.5 -3.4 4.8 -.6 z" fill="none" stroke="#f2b8cb" stroke-width="2"/>
+  <g fill="#ffffff" fill-opacity="0.9">
+    <ellipse cx="150" cy="450" rx="260" ry="70"/><ellipse cx="560" cy="460" rx="320" ry="80"/><circle cx="380" cy="420" r="48"/>
+  </g>
+  <use href="#pup" transform="translate(520,180) scale(1.5)"/>
+</svg>

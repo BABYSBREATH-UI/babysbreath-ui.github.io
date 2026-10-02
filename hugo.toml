@@ -1,84 +1,112 @@
-# ======== 站点基本信息（改标题、网址都在这里） ========
+# ======== 站点基本信息 ========
 
-# 部署到 GitHub Pages 后，改成 https://你的用户名.github.io/
 baseURL = "https://babysbreath-ui.github.io/"
-
-# 博客标题，随便改
 title = "满天星的小站"
 
 locale                 = "zh-cn"
 defaultContentLanguage = "zh-cn"
-hasCJKLanguage         = true   # 中文站必需，摘要和字数统计才正确
+hasCJKLanguage         = true
 
-theme = "Stack"
+theme = "Reimu"
 
 [pagination]
-    pagerSize = 10   # 首页每页显示几篇文章
+    pagerSize = 10
 
 [permalinks]
-    page = "/:slug/"   # 让「关于」页的网址是 /about/ 而不是 /page/about/
+    posts = "/posts/:slug/"
 
-# Markdown 渲染设置（主题官方推荐值）
 [markup]
-    [goldmark]
-        [goldmark.renderer]
-            unsafe = true   # 允许在 Markdown 里直接写 HTML
-    [tableOfContents]
-        startLevel = 2
-        endLevel   = 4
-        ordered    = false
-    [highlight]
-        noClasses   = false
-        codeFences  = true
-        guessSyntax = true
-        tabWidth    = 4
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
 
-# ======== 主题参数（覆盖 themes/Stack 的默认值，想调样式就从这里下手） ========
+# ======== 主题参数（只写和主题默认不同的部分，其余用默认值） ========
 
 [params]
-    mainSections   = ["posts"]   # 文章所在目录：content/posts/
-    rssFullContent = true
+    mainSections = ["posts"]
+    author       = "满天星"
+    email        = "318497759+BABYSBREATH-UI@users.noreply.github.com"
+    description  = "满天星的小站 —— 嵌入式 · 技术 · 生活"
+
+    # 三张原创图（淡蓝玉桂狗风，在 static/ 目录下）
+    banner = "images/banner.svg"
+    avatar = "avatar.svg"
+    cover  = "images/cover.svg"
+    toc    = true
+
+    # 顶部导航（name 必须用主题词典的键名，会自动显示为中文）
+    [[params.menu]]
+        name = "home"
+        url  = ""
+    [[params.menu]]
+        name = "archives"
+        url  = "archives"
+    [[params.menu]]
+        name = "about"
+        url  = "about"
+
+    # 横幅上的打字机欢迎语
+    [params.subtitle]
+        text = "嵌入式 · 技术 · 生活"
+        [params.subtitle.typing]
+            enable         = true
+            strings        = ["你好，我是满天星 ✨", "记录嵌入式 · 技术 · 生活", "愿每一天都有小星星 ⭐"]
+            typeSpeed      = 120
+            backSpeed      = 60
+            backDelay      = 2000
+            startDelay     = 300
+            loop           = true
+            shuffle        = false
+            showCursor     = true
+            cursorChar     = "|"
+            smartBackspace = false
 
     [params.footer]
-        since = 2026   # 页脚显示的起始年份
+        since    = 2026
+        powered  = true
+        count    = false
+        busuanzi = false   # 不加载第三方访客统计
 
-    [params.dateFormat]
-        published   = ":date_full"
-        lastUpdated = ":date_full"
+    [params.social]
+        github = "https://github.com/BABYSBREATH-UI"
 
-    [params.sidebar]
-        compact  = false
-        subtitle = "嵌入式 · 技术 · 生活"   # 侧边栏头像下面的一行小字
+    [params.dark_mode]
+        button = true
+        type   = "auto"
 
-    [params.article]
-        toc         = true    # 文章页显示目录
-        readingTime = false   # 不显示「阅读时长」，中文统计不准
+    # 不用主题自带的卡通鼠标指针
+    [params.reimu_cursor]
+        enable = false
 
-        [params.article.license]
-            enabled = false
+    # 加载提示文字
+    [params.preloader]
+        enable = true
+        [params.preloader.text]
+            "zh-CN" = "小星星加载中..."
 
-    [params.colorScheme]
-        toggle  = true     # 允许读者切换深色/浅色模式
-        default = "auto"
+    # 点击页面的小烟花彩蛋（手机上自动关闭）
+    [params.firework]
+        enable           = true
+        disable_on_mobile = true
 
-    # 首页侧边栏小工具（还可以加: type = "tag-cloud" 标签云）
-    [[params.widgets.homepage]]
-        type = "search"
-    [[params.widgets.homepage]]
-        type = "archives"
-    [[params.widgets.homepage]]
-        type = "tag-cloud"
+    # 把主题默认的红色强调色整套换成玉桂狗蓝（浅色模式）
+    [params.internal_theme.light]
+        "--red-0"             = '#1f6fb2'
+        "--red-1"             = '#3f8fd0'
+        "--red-2"             = '#66aae0'
+        "--red-3"             = '#96c9ee'
+        "--red-4"             = '#bfe0f6'
+        "--red-5"             = '#daeefa'
+        "--red-5-5"           = '#e8f5fc'
+        "--red-6"             = '#f2f9fe'
+        "--color-red-6-shadow" = 'rgba(63, 143, 208, 0.6)'
+        "--color-red-3-shadow" = 'rgba(63, 143, 208, 0.3)'
+        "--highlight-nav"      = '#e8f3fb'
+        "--highlight-scrollbar" = '#c9e2f4'
 
-    # 评论系统默认关闭（想开的话 Stack 支持 giscus/waline/twikoo 等，见主题文档）
-    [params.comments]
-        enabled = false
-
-# ======== 社交链接（把 yourusername 改成你的 GitHub 用户名） ========
-
-[[social]]
-    identifier = "github"
-    name       = "GitHub"
-    url        = "https://github.com/BABYSBREATH-UI"
-
-    [social.params]
-        icon = "brand-github"
+    # 深色模式只调整半透明底色（深色下的 --red-0..3 继承浅色的蓝色系）
+    [params.internal_theme.dark]
+        "--red-4"   = 'rgba(191, 224, 246, 0.5)'
+        "--red-5"   = 'rgba(218, 238, 250, 0.15)'
+        "--red-5-5" = 'rgba(232, 245, 252, 0.05)'
+        "--red-6"   = 'rgba(242, 249, 254, 0.2)'
