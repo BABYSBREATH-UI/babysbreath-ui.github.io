@@ -1,7 +1,7 @@
 # ======== 站点基本信息（改标题、网址都在这里） ========
 
 # 部署到 GitHub Pages 后，改成 https://你的用户名.github.io/
-baseURL = "https://babysbreath.github.io/"
+baseURL = "https://babysbreath-ui.github.io/"
 
 # 博客标题，随便改
 title = "晓勇的小站"
@@ -78,7 +78,7 @@ theme = "Stack"
 [[social]]
     identifier = "github"
     name       = "GitHub"
-    url        = "https://github.com/babysbreath"
+    url        = "https://github.com/BABYSBREATH-UI"
 
     [social.params]
         icon = "brand-github"
