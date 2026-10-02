@@ -4,7 +4,7 @@
 baseURL = "https://babysbreath-ui.github.io/"
 
 # 博客标题，随便改
-title = "晓勇的小站"
+title = "满天星的小站"
 
 locale                 = "zh-cn"
 defaultContentLanguage = "zh-cn"
