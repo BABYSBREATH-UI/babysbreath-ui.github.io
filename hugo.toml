@@ -1,7 +1,7 @@
 # ======== 站点基本信息 ========
 
 baseURL = "https://babysbreath-ui.github.io/"
-title = "满天星的小站"
+title = "BABYSBREATH"
 
 locale                 = "zh-cn"
 defaultContentLanguage = "zh-cn"
@@ -26,7 +26,7 @@ theme = "Reimu"
     mainSections = ["posts"]
     author       = "满天星"
     email        = "318497759+BABYSBREATH-UI@users.noreply.github.com"
-    description  = "满天星的小站 —— 嵌入式 · 技术 · 生活"
+    description  = "BABYSBREATH —— 嵌入式 · 技术 · 生活"
 
     # 三张原创图（淡蓝玉桂狗风，在 static/ 目录下）
     banner = "images/banner-light.jpg"
