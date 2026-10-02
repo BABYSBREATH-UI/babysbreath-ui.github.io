@@ -5,23 +5,26 @@
       <stop offset="0.55" stop-color="#d8ecfa"/>
       <stop offset="1" stop-color="#f2faff"/>
     </linearGradient>
-    <g id="pup" stroke-linejoin="round" stroke-linecap="round">
-      <g fill="#ffffff" fill-opacity="0.95" stroke="#a9cdec" stroke-width="2.5">
-        <ellipse cx="75" cy="100" rx="55" ry="18"/>
-        <ellipse cx="42" cy="92" rx="24" ry="12"/>
-        <ellipse cx="108" cy="92" rx="26" ry="12"/>
-      </g>
-      <ellipse cx="30" cy="50" rx="27" ry="12" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5" transform="rotate(18 30 50)"/>
-      <ellipse cx="120" cy="50" rx="27" ry="12" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5" transform="rotate(-18 120 50)"/>
-      <circle cx="75" cy="48" r="30" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5"/>
-      <ellipse cx="63" cy="46" rx="3" ry="4.8" fill="#5d84b8"/>
-      <ellipse cx="87" cy="46" rx="3" ry="4.8" fill="#5d84b8"/>
-      <path d="M70 56 q2.5 3.5 5 0 q2.5 3.5 5 0" stroke="#6b7b8c" stroke-width="2" fill="none"/>
-      <ellipse cx="50" cy="55" rx="6.5" ry="4.5" fill="#f9ccd6"/>
-      <ellipse cx="100" cy="55" rx="6.5" ry="4.5" fill="#f9ccd6"/>
-      <path d="M57 74 q18 10 36 0" stroke="#8fc3ee" stroke-width="5" fill="none"/>
-    </g>
     <path id="star5" d="M0 -12 L2.8 -3.8 L11.4 -3.7 L4.5 1.5 L7 9.7 L0 4.8 L-7 9.7 L-4.5 1.5 L-11.4 -3.7 L-2.8 -3.8 Z"/>
+    <g id="pup" stroke="#262626" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M60 32 C38 20 6 24 1 44 C-2 60 12 71 28 67 C45 64 57 54 64 46 Z" fill="#ffffff"/>
+      <path d="M140 32 C162 18 196 20 201 40 C204 56 190 67 174 63 C158 59 146 50 138 44 Z" fill="#ffffff"/>
+      <circle cx="56" cy="126" r="13" fill="#ffffff"/>
+      <path d="M56 115 a11 11 0 1 0 11 11" fill="none"/>
+      <path d="M61 124 a5 5 0 0 1 5 5" fill="none"/>
+      <ellipse cx="88" cy="153" rx="9" ry="5.5" fill="#ffffff"/>
+      <ellipse cx="112" cy="153" rx="9" ry="5.5" fill="#ffffff"/>
+      <ellipse cx="100" cy="122" rx="32" ry="27" fill="#ffffff"/>
+      <ellipse cx="71" cy="108" rx="6.5" ry="10" fill="#ffffff" transform="rotate(28 71 108)"/>
+      <ellipse cx="129" cy="108" rx="6.5" ry="10" fill="#ffffff" transform="rotate(-28 129 108)"/>
+      <ellipse cx="100" cy="56" rx="45" ry="40.5" fill="#ffffff"/>
+      <ellipse cx="81" cy="62" rx="4.5" ry="7" fill="#5f97d0" stroke="none"/>
+      <ellipse cx="119" cy="62" rx="4.5" ry="7" fill="#5f97d0" stroke="none"/>
+      <ellipse cx="63" cy="78" rx="9.5" ry="6" fill="#f9c9d4" stroke="none"/>
+      <ellipse cx="137" cy="78" rx="9.5" ry="6" fill="#f9c9d4" stroke="none"/>
+      <path d="M91 71 Q100 66 109 71 Q108 84 100 84 Q92 84 91 71 Z" fill="#ffffff"/>
+      <path d="M95.5 77 Q100 74.5 104.5 77 Q104 82.5 100 82.5 Q96 82.5 95.5 77 Z" fill="#f8a8bb" stroke="none"/>
+    </g>
   </defs>
 
   <rect width="1560" height="650" fill="url(#sky)"/>
@@ -29,21 +32,21 @@
   <g fill="#ffffff" fill-opacity="0.5">
     <g><circle cx="150" cy="150" r="26"/><circle cx="190" cy="140" r="34"/><circle cx="232" cy="152" r="22"/><ellipse cx="195" cy="158" rx="62" ry="14"/></g>
     <g><circle cx="620" cy="110" r="22"/><circle cx="655" cy="102" r="28"/><circle cx="690" cy="112" r="19"/><ellipse cx="655" cy="117" rx="52" ry="12"/></g>
-    <g><circle cx="1420" cy="170" r="24"/><circle cx="1458" cy="160" r="30"/><circle cx="1494" cy="172" r="20"/><ellipse cx="1458" cy="177" rx="56" ry="13"/></g>
+    <g><circle cx="1420" cy="150" r="24"/><circle cx="1458" cy="140" r="30"/><circle cx="1494" cy="152" r="20"/><ellipse cx="1458" cy="157" rx="56" ry="13"/></g>
     <g><circle cx="420" cy="300" r="18"/><circle cx="450" cy="293" r="23"/><ellipse cx="440" cy="306" rx="42" ry="10"/></g>
-    <g><circle cx="900" cy="260" r="16"/><circle cx="926" cy="254" r="20"/><ellipse cx="915" cy="265" rx="37" ry="9"/></g>
+    <g><circle cx="860" cy="240" r="16"/><circle cx="886" cy="234" r="20"/><ellipse cx="875" cy="245" rx="37" ry="9"/></g>
   </g>
 
   <g fill="#f6e27a" stroke="#e3c94e" stroke-width="1.5" stroke-linejoin="round">
     <use href="#star5" transform="translate(320,90) scale(1.1)"/>
-    <use href="#star5" transform="translate(780,70) scale(0.8)"/>
-    <use href="#star5" transform="translate(1350,100) scale(1.0)"/>
-    <use href="#star5" transform="translate(560,380) scale(0.9)"/>
+    <use href="#star5" transform="translate(700,60) scale(0.8)"/>
+    <use href="#star5" transform="translate(1350,80) scale(1.0)"/>
+    <use href="#star5" transform="translate(560,360) scale(0.9)"/>
   </g>
   <g fill="none" stroke-linejoin="round">
     <use href="#star5" transform="translate(500,180) scale(0.7)" stroke="#f2b8cb" stroke-width="2"/>
-    <use href="#star5" transform="translate(1180,80) scale(0.6)" stroke="#a3c8e6" stroke-width="2"/>
-    <use href="#star5" transform="translate(980,420) scale(0.65)" stroke="#f2b8cb" stroke-width="2"/>
+    <use href="#star5" transform="translate(1240,70) scale(0.6)" stroke="#a3c8e6" stroke-width="2"/>
+    <use href="#star5" transform="translate(940,430) scale(0.65)" stroke="#f2b8cb" stroke-width="2"/>
     <use href="#star5" transform="translate(180,300) scale(0.6)" stroke="#a3c8e6" stroke-width="2"/>
   </g>
 
@@ -60,6 +63,5 @@
     <circle cx="1440" cy="615" r="52"/>
   </g>
 
-  <use href="#pup" transform="translate(1020,215) scale(2.5)"/>
-  <use href="#pup" transform="translate(300,400) scale(1.6) rotate(-4 75 62)"/>
+  <use href="#pup" transform="translate(1010,150) scale(2.0)"/>
 </svg>

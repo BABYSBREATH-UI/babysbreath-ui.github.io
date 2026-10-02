@@ -30,7 +30,7 @@ theme = "Reimu"
 
     # 三张原创图（淡蓝玉桂狗风，在 static/ 目录下）
     banner = "images/banner.svg"
-    avatar = "avatar.svg"
+    avatar = "avatar.jpg"
     cover  = "images/cover.svg"
     toc    = true
 

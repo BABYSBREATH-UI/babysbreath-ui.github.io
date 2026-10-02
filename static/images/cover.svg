@@ -4,28 +4,36 @@
       <stop offset="0" stop-color="#c3e2f7"/>
       <stop offset="1" stop-color="#eef8fe"/>
     </linearGradient>
-    <g id="pup" stroke-linejoin="round" stroke-linecap="round">
-      <g fill="#ffffff" fill-opacity="0.95" stroke="#a9cdec" stroke-width="2.5">
-        <ellipse cx="75" cy="100" rx="55" ry="18"/><ellipse cx="42" cy="92" rx="24" ry="12"/><ellipse cx="108" cy="92" rx="26" ry="12"/>
-      </g>
-      <ellipse cx="30" cy="50" rx="27" ry="12" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5" transform="rotate(18 30 50)"/>
-      <ellipse cx="120" cy="50" rx="27" ry="12" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5" transform="rotate(-18 120 50)"/>
-      <circle cx="75" cy="48" r="30" fill="#fffdf1" stroke="#9fc4e4" stroke-width="2.5"/>
-      <ellipse cx="63" cy="46" rx="3" ry="4.8" fill="#5d84b8"/><ellipse cx="87" cy="46" rx="3" ry="4.8" fill="#5d84b8"/>
-      <path d="M70 56 q2.5 3.5 5 0 q2.5 3.5 5 0" stroke="#6b7b8c" stroke-width="2" fill="none"/>
-      <ellipse cx="50" cy="55" rx="6.5" ry="4.5" fill="#f9ccd6"/><ellipse cx="100" cy="55" rx="6.5" ry="4.5" fill="#f9ccd6"/>
-      <path d="M57 74 q18 10 36 0" stroke="#8fc3ee" stroke-width="5" fill="none"/>
+    <path id="star5" d="M0 -12 L2.8 -3.8 L11.4 -3.7 L4.5 1.5 L7 9.7 L0 4.8 L-7 9.7 L-4.5 1.5 L-11.4 -3.7 L-2.8 -3.8 Z"/>
+    <g id="pup" stroke="#262626" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M60 32 C38 20 6 24 1 44 C-2 60 12 71 28 67 C45 64 57 54 64 46 Z" fill="#ffffff"/>
+      <path d="M140 32 C162 18 196 20 201 40 C204 56 190 67 174 63 C158 59 146 50 138 44 Z" fill="#ffffff"/>
+      <circle cx="56" cy="126" r="13" fill="#ffffff"/>
+      <path d="M56 115 a11 11 0 1 0 11 11" fill="none"/>
+      <path d="M61 124 a5 5 0 0 1 5 5" fill="none"/>
+      <ellipse cx="88" cy="153" rx="9" ry="5.5" fill="#ffffff"/>
+      <ellipse cx="112" cy="153" rx="9" ry="5.5" fill="#ffffff"/>
+      <ellipse cx="100" cy="122" rx="32" ry="27" fill="#ffffff"/>
+      <ellipse cx="71" cy="108" rx="6.5" ry="10" fill="#ffffff" transform="rotate(28 71 108)"/>
+      <ellipse cx="129" cy="108" rx="6.5" ry="10" fill="#ffffff" transform="rotate(-28 129 108)"/>
+      <ellipse cx="100" cy="56" rx="45" ry="40.5" fill="#ffffff"/>
+      <ellipse cx="81" cy="62" rx="4.5" ry="7" fill="#5f97d0" stroke="none"/>
+      <ellipse cx="119" cy="62" rx="4.5" ry="7" fill="#5f97d0" stroke="none"/>
+      <ellipse cx="63" cy="78" rx="9.5" ry="6" fill="#f9c9d4" stroke="none"/>
+      <ellipse cx="137" cy="78" rx="9.5" ry="6" fill="#f9c9d4" stroke="none"/>
+      <path d="M91 71 Q100 66 109 71 Q108 84 100 84 Q92 84 91 71 Z" fill="#ffffff"/>
+      <path d="M95.5 77 Q100 74.5 104.5 77 Q104 82.5 100 82.5 Q96 82.5 95.5 77 Z" fill="#f8a8bb" stroke="none"/>
     </g>
   </defs>
   <rect width="800" height="450" fill="url(#sky)"/>
   <g fill="#ffffff" fill-opacity="0.6">
     <g><circle cx="140" cy="120" r="22"/><circle cx="175" cy="110" r="28"/><circle cx="210" cy="122" r="18"/><ellipse cx="175" cy="127" rx="52" ry="12"/></g>
-    <g><circle cx="560" cy="90" r="18"/><circle cx="590" cy="83" r="23"/><ellipse cx="578" cy="94" rx="42" ry="10"/></g>
+    <g><circle cx="480" cy="80" r="18"/><circle cx="510" cy="73" r="23"/><ellipse cx="498" cy="84" rx="42" ry="10"/></g>
   </g>
-  <path d="M330 150 l2.6 5.6 6 .8 -4.4 4.2 1.1 6 -5.3 -2.9 -5.3 2.9 1.1 -6 -4.4 -4.2 6 -.8 z" fill="#f6e27a" stroke="#e3c94e" stroke-width="1.5"/>
-  <path d="M660 180 l2 4.4 4.8 .6 -3.5 3.4 .9 4.8 -4.2 -2.3 -4.2 2.3 .9 -4.8 -3.5 -3.4 4.8 -.6 z" fill="none" stroke="#f2b8cb" stroke-width="2"/>
+  <path d="M330 130 l2.6 5.6 6 .8 -4.4 4.2 1.1 6 -5.3 -2.9 -5.3 2.9 1.1 -6 -4.4 -4.2 6 -.8 z" fill="#f6e27a" stroke="#e3c94e" stroke-width="1.5"/>
+  <path d="M120 200 l2 4.4 4.8 .6 -3.5 3.4 .9 4.8 -4.2 -2.3 -4.2 2.3 .9 -4.8 -3.5 -3.4 4.8 -.6 z" fill="none" stroke="#f2b8cb" stroke-width="2"/>
   <g fill="#ffffff" fill-opacity="0.9">
     <ellipse cx="150" cy="450" rx="260" ry="70"/><ellipse cx="560" cy="460" rx="320" ry="80"/><circle cx="380" cy="420" r="48"/>
   </g>
-  <use href="#pup" transform="translate(520,180) scale(1.5)"/>
+  <use href="#pup" transform="translate(430,90) scale(1.5)"/>
 </svg>
