@@ -29,9 +29,9 @@ theme = "Reimu"
     description  = "满天星的小站 —— 嵌入式 · 技术 · 生活"
 
     # 三张原创图（淡蓝玉桂狗风，在 static/ 目录下）
-    banner = "images/banner.svg"
+    banner = "images/banner-light.jpg"
     avatar = "avatar.jpg"
-    cover  = "images/cover.svg"
+    cover  = "images/cover.jpg"
     toc    = true
 
     # 顶部导航（name 必须用主题词典的键名，会自动显示为中文）
@@ -88,6 +88,10 @@ theme = "Reimu"
     [params.firework]
         enable           = true
         disable_on_mobile = true
+
+    # 深色模式下把横幅换成夜晚那张（浅色用 banner-light，夜间自动切 banner-dark）
+    [params.injector]
+        head_end = '<style>html[data-theme="dark"] #header > img { content: url("/images/banner-dark.jpg"); }</style>'
 
     # 把主题默认的红色强调色整套换成玉桂狗蓝（浅色模式）
     [params.internal_theme.light]
