@@ -1,0 +1,8 @@
+# 本地构建产物，不用上传
+public/
+resources/
+.hugo_build.lock
+
+# 本地下载的 Hugo 引擎（GitHub Actions 会自己装）
+tools/
+*.zip

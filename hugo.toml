@@ -1,0 +1,84 @@
+# ======== 站点基本信息（改标题、网址都在这里） ========
+
+# 部署到 GitHub Pages 后，改成 https://你的用户名.github.io/
+baseURL = "https://babysbreath.github.io/"
+
+# 博客标题，随便改
+title = "晓勇的小站"
+
+locale                 = "zh-cn"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage         = true   # 中文站必需，摘要和字数统计才正确
+
+theme = "Stack"
+
+[pagination]
+    pagerSize = 10   # 首页每页显示几篇文章
+
+[permalinks]
+    page = "/:slug/"   # 让「关于」页的网址是 /about/ 而不是 /page/about/
+
+# Markdown 渲染设置（主题官方推荐值）
+[markup]
+    [goldmark]
+        [goldmark.renderer]
+            unsafe = true   # 允许在 Markdown 里直接写 HTML
+    [tableOfContents]
+        startLevel = 2
+        endLevel   = 4
+        ordered    = false
+    [highlight]
+        noClasses   = false
+        codeFences  = true
+        guessSyntax = true
+        tabWidth    = 4
+
+# ======== 主题参数（覆盖 themes/Stack 的默认值，想调样式就从这里下手） ========
+
+[params]
+    mainSections   = ["posts"]   # 文章所在目录：content/posts/
+    rssFullContent = true
+
+    [params.footer]
+        since = 2026   # 页脚显示的起始年份
+
+    [params.dateFormat]
+        published   = ":date_full"
+        lastUpdated = ":date_full"
+
+    [params.sidebar]
+        compact  = false
+        subtitle = "嵌入式 · 技术 · 生活"   # 侧边栏头像下面的一行小字
+
+    [params.article]
+        toc         = true    # 文章页显示目录
+        readingTime = false   # 不显示「阅读时长」，中文统计不准
+
+        [params.article.license]
+            enabled = false
+
+    [params.colorScheme]
+        toggle  = true     # 允许读者切换深色/浅色模式
+        default = "auto"
+
+    # 首页侧边栏小工具（还可以加: type = "tag-cloud" 标签云）
+    [[params.widgets.homepage]]
+        type = "search"
+    [[params.widgets.homepage]]
+        type = "archives"
+    [[params.widgets.homepage]]
+        type = "tag-cloud"
+
+    # 评论系统默认关闭（想开的话 Stack 支持 giscus/waline/twikoo 等，见主题文档）
+    [params.comments]
+        enabled = false
+
+# ======== 社交链接（把 yourusername 改成你的 GitHub 用户名） ========
+
+[[social]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/babysbreath"
+
+    [social.params]
+        icon = "brand-github"
