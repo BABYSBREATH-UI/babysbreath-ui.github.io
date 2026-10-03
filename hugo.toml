@@ -50,7 +50,7 @@ theme = "Reimu"
         text = "嵌入式 · 技术 · 生活"
         [params.subtitle.typing]
             enable         = true
-            strings        = ["你好，我是满天星 ✨", "记录嵌入式 · 技术 · 生活", "愿每一天都有小星星 ⭐"]
+            strings        = ["你好，我是满天星 ✨", "你可以忙，你可以累，但你不可以不开心。", "愿每一天都有小星星 ⭐"]
             typeSpeed      = 120
             backSpeed      = 60
             backDelay      = 2000
