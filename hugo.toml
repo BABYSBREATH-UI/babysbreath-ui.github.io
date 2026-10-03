@@ -96,6 +96,19 @@ theme = "Reimu"
     # 深色模式下把横幅换成夜晚那张（浅色用 banner-light，夜间自动切 banner-dark）
     [params.injector]
         head_end = '<style>html[data-theme="dark"] #header > img { content: url("/images/banner-dark.jpg"); }</style>'
+        body_end = '''
+<img id="cinna-follower" src="/images/cursor/cinnamoroll-follower.png" alt="" />
+<style>
+  #cinna-follower{position:fixed;left:0;top:0;width:52px;height:auto;pointer-events:none;z-index:2147483647 !important;transform:translate(-200px,-200px);}
+  @media (max-width:768px){#cinna-follower{display:none}}
+</style>
+<script>
+(function(){
+  var el=document.getElementById('cinna-follower');
+  if(!el)return;
+  document.addEventListener('mousemove',function(e){el.style.transform='translate('+(e.clientX+4)+'px,'+(e.clientY+2)+'px)';});
+})();
+</script>'''
 
     # 把主题默认的红色强调色整套换成玉桂狗蓝（浅色模式）
     [params.internal_theme.light]
