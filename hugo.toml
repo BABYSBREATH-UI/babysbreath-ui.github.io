@@ -74,9 +74,13 @@ theme = "Reimu"
         button = true
         type   = "auto"
 
-    # 不用主题自带的卡通鼠标指针
+    # 玉桂狗鼠标指针（普通/链接/文本三套）
     [params.reimu_cursor]
-        enable = false
+        enable = true
+        [params.reimu_cursor.cursor]
+            default = "../images/cursor/cinnamoroll-default.png"
+            pointer = "../images/cursor/cinnamoroll-pointer.png"
+            text    = "../images/cursor/cinnamoroll-text.png"
 
     # 加载提示文字
     [params.preloader]
